@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Movie</title>
+     <!-- favicon -->
+   <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+     <!-- tailwind cdn -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="bg-gray-900 text-white min-h-screen py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold">Contact Us</h2>
+      <p class="mt-2 text-gray-400">Have questions? We'd love to hear from you.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Form -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name</label>
+            <input type="text" name="name" placeholder="Your Name"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" name="email" placeholder="Your Email"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Message</label>
+            <textarea name="message" rows="4" placeholder="Your Message"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-amber-500 focus:outline-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-md font-semibold transition duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Our Office</h3>
+          <p class="text-gray-400">123 Cinema Street, Movie City, India</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Email</h3>
+          <p class="text-gray-400">bookmymovie@gmail.com</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Phone</h3>
+          <p class="text-gray-400">+91 98765 43210</p>
+        </div>
+        <div>
+          <iframe class="w-full h-60 rounded-lg border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.316455539731!2d75.78040287472798!3d11.258753051634825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDE1JzMxLjUiTiA3NcKwNDYnNTYuNSJF!5e0!3m2!1sen!2sin!4v1692104600000"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
