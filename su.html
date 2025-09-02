@@ -1,20 +1,18 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Tickets Su from So</title>
-   <!-- favicon -->
-   <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+  <title>Book Tickets - Su from So</title>
 
-  <!-- tailwind link  -->
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+
+  <!-- tailwind link -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- font awesome link  -->
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,57 +20,63 @@
 
 <body class="bg-neutral-900 text-white font-sans">
 
-  <div class="min-h-screen flex items-center justify-center pl-30">
+  <div class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-10 gap-10">
 
-    <!-- Image section  -->
-    <div class="flex flex-col items-left mb-4 md:mb-0">
-      <div class="bg-yellow-500 w-14 h-13 text-black text-xs font-semibold px-3 py-2 rounded-md mb-4 cursor-pointer">
-        Tue 12<br />Aug
+    <!-- Image + Date -->
+    <div class="flex flex-col items-center md:items-start">
+      <!-- Date badge -->
+      <div
+        class="bg-yellow-500 w-16 h-16 flex flex-col items-center justify-center text-black text-xs font-semibold rounded-md mb-4 cursor-pointer">
+        <span>Tue</span>
+        <span>12 Aug</span>
       </div>
-      <div class="border-2 border-yellow-500 shadow-md overflow-hidden">
-        <img src="./media2/Su-From-So--6ff95080-6d1b-11f0-860b-0123967fd46d.avif" alt="Movie Poster" class="w-72 p-5" />
+
+      <!-- Poster -->
+      <div class="border-2 border-yellow-500 shadow-md overflow-hidden rounded-lg p-4">
+        <img src="./media2/Su-From-So--6ff95080-6d1b-11f0-860b-0123967fd46d.avif" 
+             alt="Movie Poster" 
+             class="w-60 sm:w-72 object-cover rounded-md" />
       </div>
     </div>
 
-    <!-- Deials section  -->
-    <div class="flex-1 pl-10">
-      <div class="flex items-center gap-2">
-        <h2 class="text-2xl font-semibold">Su From So</h2>
+    <!-- Movie Details -->
+    <div class="flex-1 max-w-xl">
+      <!-- Title + Language -->
+      <div class="flex items-center flex-wrap gap-2">
+        <h2 class="text-2xl md:text-3xl font-semibold">Su From So</h2>
         <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Malayalam</span>
       </div>
 
+      <!-- Cancellation Note -->
       <p class="text-yellow-400 mt-2 font-medium">Non Cancellable</p>
 
-      <div class="flex gap-3 mt-3">
-        <div class="border-2 border-yellow-500 bg-white text-black text-sm px-3 py-1 rounded">11:30 AM<br />SCREEN 2
-        </div>
-        <div class="border-2 border-yellow-500 bg-white text-black text-sm px-3 py-1 rounded">09:15 PM<br />SCREEN 2
-        </div>
+      <!-- Showtimes -->
+      <div class="flex flex-wrap gap-3 mt-3">
+        <div class="border-2 border-yellow-500 bg-white text-black text-sm px-4 py-2 rounded">11:30 AM<br />SCREEN 2</div>
+        <div class="border-2 border-yellow-500 bg-white text-black text-sm px-4 py-2 rounded">09:15 PM<br />SCREEN 2</div>
       </div>
 
-      <p class="mt-4 text-sm">
+      <!-- Synopsis -->
+      <p class="mt-4 text-sm leading-relaxed">
         In a quiet village, a boy's innocent crush unleashes strange events that have everyone convinced he's brought a
         ghost along with his feelings.
       </p>
 
-      <div class="mt-4 space-y-1 text-sm">
+      <!-- Movie Info -->
+      <div class="mt-4 space-y-2 text-sm leading-relaxed">
         <p><span class="text-yellow-500 font-semibold">Release Date:</span> 01-Aug-2025</p>
         <p><span class="text-yellow-500 font-semibold">Director:</span> J.P Thuminad</p>
-        <p><span class="text-yellow-500 font-semibold">Production:</span> Shashidhar Shetty Baroda, Ravi Rai Kalasa, Raj
-          B. Shetty</p>
-        <p><span class="text-yellow-500 font-semibold">Staring:</span> Shaneel Gautham, Prakash Thuminad, J.P Thuminad
-        </p>
+        <p><span class="text-yellow-500 font-semibold">Production:</span> Shashidhar Shetty Baroda, Ravi Rai Kalasa, Raj B. Shetty</p>
+        <p><span class="text-yellow-500 font-semibold">Starring:</span> Shaneel Gautham, Prakash Thuminad, J.P Thuminad</p>
       </div>
 
-      <div class=" flex items-center mt-3">
+      <!-- YouTube + Rating -->
+      <div class="flex items-center gap-3 mt-5">
         <i class="fa-brands fa-youtube text-5xl" style="color: #d91212;"></i>
-        <p>U/A 16+</p>
+        <p class="text-sm">U/A 16+</p>
       </div>
     </div>
   </div>
 
-
-
 </body>
-
 </html>
